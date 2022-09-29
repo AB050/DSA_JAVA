@@ -9,6 +9,9 @@ public class Max3Element {
     int arr3[] = { 2, 13, 15, 17, 19, 9, 5, 8, 16, 18, 19 };
     int n3 = arr3.length;
     Find3MaxElement(arr3, n3);
+    int arr4[] = { 4, 1, 4 };
+    int n4 = arr4.length;
+    Find3MaxElement(arr4, n4);
   }
 
   static void Find3MaxElement(int[] arr, int n) {
@@ -20,15 +23,16 @@ public class Max3Element {
       System.out.println("Invalid Inuput");
     }
     for (i = 0; i < n; i++) {
-      if (arr[i] > first) {
+      if (arr[i] >= first) {
         third = second;
         second = first;
         first = arr[i];
 
-      } else if (arr[i] > second) {
-        second = arr[i];
+      } else if (arr[i] >= second) {
         third = second;
-      } else if (arr[i] > third) {
+        second = arr[i];
+
+      } else {
         third = arr[i];
       }
     }
