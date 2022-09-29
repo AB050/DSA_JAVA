@@ -27,7 +27,7 @@ public class ReverseVowelString {
             end--;
         }
 
-        String ans = String.copyValueOf(str);
+        String ans = new String(str);
         return ans;
     }
 

@@ -19,6 +19,7 @@ public class fizzBuzz {
     for (int i = 1; i < res.length; i++) {
       System.out.println(res[i]);
     }
+
     System.out.println(FizzBuzz(n));
   }
 
