@@ -7,6 +7,7 @@ public class MajorityElement {
     System.out.println(ans);
     System.out.println(majorityElementBruteForce(arr));
     System.out.println(sort_Checking(arr));
+    System.out.println(majorityElementBMorre(arr));
   }
 
   // Iterate over Value
@@ -49,5 +50,30 @@ public class MajorityElement {
   static int sort_Checking(int[] nums) {
     Arrays.sort(nums);
     return nums[nums.length / 2];
+  }
+
+  // Boyer - Moore Algorithm
+  static int majorityElementBMorre(int[] nums) {
+    int major = nums[0], count = 1;
+    int i = 1;
+    int n = nums.length;
+
+    for (i = 1; i < n; i++) {
+      // New Element -> Increase frequency from 0 -> 1
+      if (count == 0) {
+        ++count;
+        major = nums[i];
+      }
+
+      // Same Element -> Increase Frequency By 1
+      else if (nums[i] == major)
+        ++count;
+
+      // Different Element -> Decrease Frequency By 1
+      else
+        --count;
+    }
+
+    return major;
   }
 }
