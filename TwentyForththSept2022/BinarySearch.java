@@ -1,7 +1,9 @@
+package TwentyForththSept2022;
+
 public class BinarySearch {
   public static void main(String[] args) {
-    int[] arr = { 1, 2, 3, 4, 5 };
-    int key = 1;
+    int[] arr = { 1, 2, 3, 4, 5, 10 };
+    int key = 10;
     System.out.println(SearchBinary(arr, key));
   }
 
