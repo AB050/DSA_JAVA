@@ -1,13 +1,20 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum {
   public static void main(String[] args) {
-    int[] nums = { 5, 25, 75 };
-    int target = 100;
-    for (int val : twoSum(nums, target)) {
-      System.out.println(val);
-    }
-    TwoPointerApproach(nums, target);
-    int[] myans = inputtwoSum(nums, target);
-    for (int val : myans) {
+    int[] nums = { 3, 2, 4 };
+    int target = 6;
+    // for (int val : twoSum(nums, target)) {
+    // System.out.println(val);
+    // }
+    // TwoPointerApproach(nums, target);
+    // int[] myans = inputtwoSum(nums, target);
+    // for (int val : myans) {
+    // System.out.println(val);
+    // }
+    int[] ans = twoSumUsingMap(nums, target);
+    for (int val : ans) {
       System.out.println(val);
     }
   }
@@ -57,4 +64,19 @@ public class TwoSum {
     }
   }
 
+  public static int[] twoSumUsingMap(int[] nums, int target) {
+    Map<Integer, Integer> myMap = new HashMap<Integer, Integer>();
+    int[] ans = new int[2];
+    int n = nums.length;
+    for (int i = 0; i < n; i++) {
+      if (myMap.containsKey(target - nums[i])) {
+        ans[1] = i;
+        ans[0] = myMap.get(target - nums[i]);
+        return ans;
+      }
+      myMap.put(nums[i], i);
+
+    }
+    return ans;
+  }
 }

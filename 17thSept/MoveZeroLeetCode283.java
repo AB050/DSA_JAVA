@@ -8,6 +8,10 @@ public class MoveZeroLeetCode283 {
     for (int k = 0; k < n; k++) {
       System.out.println(nums[k]);
     }
+    moveZeroswithoutTwoPointer(nums);
+    for (int k = 0; k < n; k++) {
+      System.out.println(nums[k]);
+    }
   }
 
   private static void moveZeros(int[] nums, int n) {
@@ -28,5 +32,17 @@ public class MoveZeroLeetCode283 {
         right++;
       }
     }
+  }
+
+  private static void moveZeroswithoutTwoPointer(int[] nums) {
+    int count = 0;
+    int n = nums.length;
+    for (int i = 0; i < n; i++) {
+      if (nums[i] != 0) {
+        nums[count++] = nums[i];
+      }
+    }
+    while (count < n)
+      nums[count++] = 0;
   }
 }
