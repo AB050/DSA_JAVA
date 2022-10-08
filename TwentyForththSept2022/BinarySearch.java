@@ -24,27 +24,4 @@ public class BinarySearch {
     return -1;
   }
 
-  public static int[] twoSum(int[] numbers, int target) {
-    int end = numbers.length - 1;
-    int[] ans = new int[2];
-    int n = numbers.length;
-    int strat = 0;
-    for (int i = 0; i < n; i++) {
-      for (int j = i + 1; j < n; j++) {
-        if (numbers[i] + numbers[j] == target) {
-          break;
-
-        } else if (numbers[i] + numbers[j] > target) {
-          end--;
-        } else {
-          start++;
-
-        }
-      }
-      ans[0] = start + 1;
-      ans[1] = end - 1;
-      return ans;
-    }
-  }
-
 }
