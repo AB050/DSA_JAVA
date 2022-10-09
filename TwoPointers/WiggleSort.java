@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class WiggleSort {
   public static void main(String[] args) {
-    int[] nums = { 3, 5, 2, 1, 6, 4 }; // One possible ouput :{ 1, 6, 2, 5, 3, 4}
+    // int[] nums = { 3, 5, 2, 1, 6, 4 }; // One possible ouput :{ 1, 6, 2, 5, 3, 4}
   }
 
   static void BruteForceWiggleSort(int[] nums) {
