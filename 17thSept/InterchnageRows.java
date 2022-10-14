@@ -2,7 +2,7 @@ public class InterchnageRows {
   public static void main(String[] args) {
     int K = 1, L = 4;
     int mat[][] = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
-    // exchangeAnyTwoRows(mat, K, L);
+    exchangeAnyTwoRows(mat, K, L);
     exchangeAnyTwoCols(mat);
   }
 
