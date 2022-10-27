@@ -32,7 +32,7 @@ public class Max3Element {
         third = second;
         second = arr[i];
 
-      } else {
+      } else if (arr[i] >= third) {
         third = arr[i];
       }
     }
