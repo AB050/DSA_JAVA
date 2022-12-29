@@ -6,7 +6,7 @@ public class UniqueCharacter_L387 {
     System.out.println(firstUniqChar(s));
   }
 
-  // Hashing or Map Based Approach
+  // Array Based Approach
   public static int firstUniqChar(String s) {
     int[] freq = new int[26];
     for (int i = 0; i < s.length(); i++) {
