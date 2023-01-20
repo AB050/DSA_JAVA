@@ -12,7 +12,8 @@ public class ConatinerMostWater {
     int low = 0;
     int high = height.length - 1;
     while (low < high) {
-      maximumWater = Math.max(maximumWater, (high - low) * Math.min(height[low], height[high]));
+      int min_height = Math.min(height[low], height[high]);
+      maximumWater = Math.max(maximumWater, (high - low) * min_height);
       if (height[low] < height[high])
         low++;
       else
