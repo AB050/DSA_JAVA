@@ -13,7 +13,11 @@ public class DuplicateZeros {
           arr[j] = arr[j - 1];
         }
         i = i + 1;
+        
       }
+    }
+    for(int a:arr){
+      System.out.print(a + " ");
     }
   }
 }
