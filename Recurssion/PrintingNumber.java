@@ -9,8 +9,9 @@ public class PrintingNumber {
     // Base Case
     if (n == 0)
       return;
-    System.out.println(n);
+    // Recursive Relation
     printNumber(n - 1);
+    System.out.println(n);
 
   }
 }
