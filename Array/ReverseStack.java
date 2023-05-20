@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 import java.util.Stack;
 

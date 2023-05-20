@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 public class KadaneAlgo {
   public static void main(String[] args) {

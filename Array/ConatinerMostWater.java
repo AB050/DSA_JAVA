@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 public class ConatinerMostWater {
   public static void main(String[] args) {

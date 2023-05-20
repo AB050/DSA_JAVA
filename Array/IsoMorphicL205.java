@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 public class IsoMorphicL205 {
   public static void main(String[] args) {

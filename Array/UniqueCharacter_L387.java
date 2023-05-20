@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 public class UniqueCharacter_L387 {
   public static void main(String[] args) {

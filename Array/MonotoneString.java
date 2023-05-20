@@ -1,4 +1,4 @@
-package TwentyForththSept2022;
+package Array;
 
 public class MonotoneString {
   public static void main(String[] args) {
@@ -6,15 +6,15 @@ public class MonotoneString {
     System.out.println(minFlipsMonoIncr(s));
   }
 
-  public  static int minFlipsMonoIncr(String s) {
+  public static int minFlipsMonoIncr(String s) {
     int flips = 0, counter = 0;
-    for(int i =0; i < s.length(); i++){
-        if(s.charAt(i) == '1') 
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i) == '1')
         counter++;
-        else 
+      else
         flips++;
-        flips= Math.min(flips,counter);
+      flips = Math.min(flips, counter);
     }
     return flips;
-}
+  }
 }
