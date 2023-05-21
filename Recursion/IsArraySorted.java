@@ -1,4 +1,4 @@
-package Recurssion;
+package Recursion;
 
 public class IsArraySorted {
   public static void main(String[] args) {

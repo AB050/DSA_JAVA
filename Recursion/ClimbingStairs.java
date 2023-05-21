@@ -1,4 +1,4 @@
-package Recurssion;
+package Recursion;
 
 public class ClimbingStairs {
   public static void main(String[] args) {
