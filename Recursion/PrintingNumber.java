@@ -7,11 +7,11 @@ public class PrintingNumber {
 
   public static void printNumber(int n) {
     // Base Case
-    if (n == 0)
+    if (n <= 0)
       return;
     // Recursive Relation
-    printNumber(n - 1);
     System.out.println(n);
+    printNumber(n - 1);
 
   }
 }
